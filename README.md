@@ -51,3 +51,4 @@ Follow these steps to set up the project environment on your local machine:
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
 ```
+pip install -r requirements.txt
