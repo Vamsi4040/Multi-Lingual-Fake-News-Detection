@@ -1,0 +1,8 @@
+numpy==1.23.5
+pandas==1.5.0
+torch==1.13.0          # or tensorflow==2.x if you're using TensorFlow instead
+transformers==4.27.1
+gradio==3.37.1
+jupyterlab==3.6.0      # or jupyter==1.x if you're using the classic notebook interface
+scikit-learn==1.2.2
+matplotlib==3.6.2      # if you're using it for plotting results
