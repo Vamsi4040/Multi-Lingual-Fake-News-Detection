@@ -1,0 +1,31 @@
+Upload the Colab File to Google Drive:
+
+Log in to your Google Drive account.
+Upload the fake_news_detector_refined.ipynb file to your Drive by dragging and dropping it or using the "New" > "File upload" option.
+
+Open the Colab File:
+
+Right-click on the uploaded file in Google Drive.
+Select Open with > Google Colaboratory. If Colaboratory isn't listed, click on "Connect more apps" and search for "Colaboratory" to install it.
+
+Set Runtime Settings:
+
+Once the notebook opens, go to the menu bar and click on Runtime > Change runtime type.
+In the Runtime type dropdown, select:
+Hardware accelerator: Set this to GPU or TPU.
+Click Save.
+
+Install Required Libraries:
+
+install specific Python libraries, execute them to ensure all dependencies are properly installed. Usually, this is one of the first cells.
+Upload or Connect Your Dataset:
+
+ensure the dataset is either:
+
+Uploaded directly to the Colab environment (via the file browser on the left).
+Accessible via a download link coded into the notebook.
+Mounted from Google Drive (the notebook may have a cell for mounting your Drive).
+Run the Notebook:
+
+Run the cells sequentially by pressing Shift + Enter or clicking on the "Play" button beside each cell.
+Monitor the output and verify that there are no errors.
