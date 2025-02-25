@@ -63,7 +63,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-2. ## Open the Notebook
+2. **Open the Notebook**
 
 Open the `IPYNB_Multi Lingual Fake News Detection.ipynb` file, which contains:
 - Data exploration and preprocessing steps.
