@@ -65,7 +65,7 @@ jupyter notebook
 
 ## Open the Notebook
 
-Open the `IPYB_Multi Lingual Fake News Detection.ipynb` file, which contains:
+Open the `IPYNB_Multi Lingual Fake News Detection.ipynb` file, which contains:
 - Data exploration and preprocessing steps.
 - Model training code, including fine-tuning of transformer-based models.
 - Evaluation metrics and result visualization.
