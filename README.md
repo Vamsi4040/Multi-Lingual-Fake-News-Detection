@@ -52,3 +52,59 @@ Follow these steps to set up the project environment on your local machine:
    cd your-repo-name
 ```
 pip install -r requirements.txt
+```
+## Usage
+
+### Running the Jupyter Notebook
+
+**Launch Jupyter Notebook:**
+
+```bash
+jupyter notebook
+```
+
+## Open the Notebook
+
+Open the `IPYB_Multi Lingual Fake News Detection.ipynb` file, which contains:
+- Data exploration and preprocessing steps.
+- Model training code, including fine-tuning of transformer-based models.
+- Evaluation metrics and result visualization.
+- Code for deploying a Gradio interface for interactive testing.
+
+## Deploying the Model Interface
+
+The project includes a Gradio-based interface that enables real-time predictions:
+
+**Start the Interface:**  
+Run the appropriate Python script or the notebook cell that launches Gradio:
+```python
+import gradio as gr
+
+# Assuming a function `predict` is defined for inference:
+gr.Interface(fn=predict, inputs="text", outputs="text", title="Fake News Detector").launch()
+```
+## Interact with the Model
+
+Use the web interface to input news text and view the prediction results, which indicate whether the news is considered fake or real.
+
+## Model Architecture and Training Details
+
+### Model Selection
+
+- **Transformer Models:**  
+  The project utilizes lightweight models like DistilBERT for faster inference, as well as multi-lingual models such as mBERT or XLM-Roberta to handle diverse languages.
+- **Classification Head:**  
+  A simple feed-forward network is added on top of the transformer outputs to perform binary classification (fake vs. real).
+
+### Training Setup
+
+- **Data Split:**  
+  The dataset is divided into training, validation, and test sets.
+- **Hyperparameters:**  
+  Key parameters include learning rate, batch size, and the number of training epochs. Hyperparameter tuning (e.g., using grid search) is applied to optimize performance.
+- **Loss Function:**  
+  Binary Cross-Entropy Loss is used for training.
+- **Optimization:**  
+  AdamW optimizer is implemented with a linear warm-up scheduler for smoother convergence.
+- **Metrics:**  
+  Model performance is measured using accuracy, precision, recall, and F1-score.
