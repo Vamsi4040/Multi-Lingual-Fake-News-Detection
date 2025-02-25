@@ -148,7 +148,7 @@ Use the web interface to input news text and view the prediction results, which 
 
 
 
-### References
+## References
 - **Transformer Models:**  
   - Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*.  
   - Sanh, V., Debut, L., Chaumond, J., & Wolf, T. (2019). *DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter*.  
