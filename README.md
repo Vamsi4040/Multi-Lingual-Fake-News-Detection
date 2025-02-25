@@ -43,6 +43,31 @@ To ensure the raw data is in a suitable format for modeling:
 - **Padding & Truncation:** Adjust sequences to a fixed maximum length (e.g., 512 tokens) to meet model input requirements.
 - **Encoding:** Convert tokens into numerical format for input into deep learning models.
 
+## Methodologies
+
+This project leverages several advanced techniques in natural language processing and deep learning. The key methodologies used include:
+
+- **Data Preprocessing:**  
+  - **Tokenization:** Conversion of raw text into tokens using Hugging Face’s tokenizers (e.g., DistilBERT/mBERT tokenizer).  
+  - **Normalization:** Text cleaning that includes lowercasing, removal of punctuation, and optional stopword removal to standardize input data.  
+  - **Padding & Truncation:** Adjusting input sequences to a fixed maximum length (e.g., 512 tokens) to match model requirements.
+
+- **Model Architecture:**  
+  - **Transformer Models:** Fine-tuning pre-trained transformer architectures such as DistilBERT, mBERT, or XLM-Roberta for binary classification of news as fake or real.  
+  - **Classification Head:** A simple feed-forward neural network is added on top of the transformer to output binary predictions.
+
+- **Training Strategy:**  
+  - **Data Splitting:** Dividing the dataset into training, validation, and test sets to ensure robust evaluation.  
+  - **Loss Function:** Utilizing Binary Cross-Entropy Loss to measure the difference between predicted and actual labels.  
+  - **Optimization:** Implementing the AdamW optimizer with a linear warm-up scheduler for smoother convergence.  
+  - **Hyperparameter Tuning:** Employing methods like grid search to optimize learning rate, batch size, and the number of epochs.
+
+- **Evaluation Metrics:**  
+  - Metrics such as accuracy, precision, recall, and F1-score are computed to assess model performance.
+
+- **Deployment:**  
+  - **Interactive Interface:** A Gradio-based interface is integrated for real-time predictions, allowing users to input news text and view results immediately.
+
 ## Installation
 Follow these steps to set up the project environment on your local machine:
 
@@ -120,3 +145,15 @@ Use the web interface to input news text and view the prediction results, which 
   AdamW optimizer is implemented with a linear warm-up scheduler for smoother convergence.
 - **Metrics:**  
   Model performance is measured using accuracy, precision, recall, and F1-score.
+
+
+
+### References
+- **Transformer Models:**  
+  - Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*.  
+  - Sanh, V., Debut, L., Chaumond, J., & Wolf, T. (2019). *DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter*.  
+- **Optimization Techniques:**  
+  - Loshchilov, I., & Hutter, F. (2019). *Decoupled Weight Decay Regularization*.  
+- Additional implementation details and further references are included within the Jupyter Notebook.
+
+
