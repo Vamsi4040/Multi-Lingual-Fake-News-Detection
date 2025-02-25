@@ -50,9 +50,21 @@ Follow these steps to set up the project environment on your local machine:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
-```
+   
+2. **Install Dependencies**
+
+Ensure that pip is updated and then run:
+
+```bash
 pip install -r requirements.txt
 ```
+The `requirements.txt` file includes all necessary libraries such as:
+- TensorFlow/PyTorch
+- Hugging Face Transformers
+- Pandas
+- NumPy
+- Gradio
+
 ## Usage
 
 ### Running the Jupyter Notebook
@@ -71,11 +83,11 @@ Open the `IPYNB_Multi Lingual Fake News Detection.ipynb` file, which contains:
 - Evaluation metrics and result visualization.
 - Code for deploying a Gradio interface for interactive testing.
 
-## Deploying the Model Interface
+### Deploying the Model Interface
 
 The project includes a Gradio-based interface that enables real-time predictions:
 
-**Start the Interface:**  
+1. **Start the Interface:**  
 Run the appropriate Python script or the notebook cell that launches Gradio:
 ```python
 import gradio as gr
@@ -83,7 +95,7 @@ import gradio as gr
 # Assuming a function `predict` is defined for inference:
 gr.Interface(fn=predict, inputs="text", outputs="text", title="Fake News Detector").launch()
 ```
-## Interact with the Model
+2. **Interact with the Model**
 
 Use the web interface to input news text and view the prediction results, which indicate whether the news is considered fake or real.
 
